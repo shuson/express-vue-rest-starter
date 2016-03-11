@@ -2,10 +2,10 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './client/main.js'
   },
   output: {
-    path: path.resolve(__dirname, '../dist/static'),
+    path: path.resolve(__dirname, '../www/static'),
     publicPath: '/static/',
     filename: '[name].js'
   },
@@ -13,7 +13,7 @@ module.exports = {
     extensions: ['', '.js', '.vue'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
-      'src': path.resolve(__dirname, '../src')
+      'src': path.resolve(__dirname, '../client')
     }
   },
   resolveLoader: {

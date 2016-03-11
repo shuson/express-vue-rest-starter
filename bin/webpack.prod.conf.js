@@ -43,8 +43,9 @@ config.plugins = (config.plugins || []).concat([
   // you can customize output by editing /index.html
   // see https://github.com/ampedandwired/html-webpack-plugin
   new HtmlWebpackPlugin({
-    filename: '../index.html',
-    template: 'index.html',
+    title: 'My App',
+    filename: '../index.html', //now the path is in /static/ dir, because of path: path.resolve(__dirname, '../www/static'),
+    template: './client/index.html',
     inject: true,
     minify: {
       removeComments: true,

@@ -17,7 +17,7 @@ cssLoaders({
 
 // add hot-reload related code to entry chunks
 var polyfill = 'eventsource-polyfill'
-var devClient = './build/dev-client'
+var devClient = './bin/dev-client'
 Object.keys(config.entry).forEach(function (name, i) {
   var extras = i === 0 ? [polyfill, devClient] : [devClient]
   config.entry[name] = extras.concat(config.entry[name])
