@@ -2,7 +2,8 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    app: './client/main.js'
+    app: './client/main.js',
+    vendor: ['jquery']
   },
   output: {
     path: path.resolve(__dirname, '../www/static'),

@@ -1,5 +1,6 @@
 import { Promise } from 'es6-promise'
 import { EventEmitter } from 'events'
+import $ from 'jquery'
 
 const store = new EventEmitter()
 
