@@ -21,3 +21,35 @@ store.fetchAll = () => {
     })
   })
 }
+
+store.fetchNew = () => {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      method: 'GET',
+      url: '/newusers',
+      dataType: 'json',
+      success: (result) => {
+        resolve(result)
+      },
+      error: (error) => {
+        reject(error)
+      }
+    })
+  })
+}
+
+store.fetchDelete = () => {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      method: 'GET',
+      url: '/deleteusers',
+      dataType: 'json',
+      success: (result) => {
+        resolve(result)
+      },
+      error: (error) => {
+        reject(error)
+      }
+    })
+  })
+}
