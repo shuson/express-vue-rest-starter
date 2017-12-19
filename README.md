@@ -1,6 +1,6 @@
-# vue-webpack-quick-starter
+# express-vue-quick-starter
 
-> A vuejs project with webpack
+> A vuejs project with expressjs as backend API provider
 
 ## Build Setup
 
